@@ -1,0 +1,23 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "GPL-3.0"
+
+[[mods]]
+modId = "packetevents"
+version = "${version}"
+displayName = "PacketEvents"
+description = "PacketEvents is a packet handling library for Minecraft."
+
+[[dependencies.packetevents]]
+    modId = "forge"
+    mandatory = true
+    versionRange = "[47,)"
+    ordering = "NONE"
+    side = "SERVER"
+
+[[dependencies.packetevents]]
+    modId = "minecraft"
+    mandatory = true
+    versionRange = "[1.20.1]"
+    ordering = "NONE"
+    side = "SERVER"

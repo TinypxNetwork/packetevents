@@ -16,6 +16,10 @@ pluginManagement {
             name = "FabricMC"
             url = uri("https://maven.fabricmc.net/")
         }
+        maven {
+            name = "Forge"
+            url = uri("https://maven.minecraftforge.net/")
+        }
         mavenCentral()
         gradlePluginPortal()
     }
@@ -43,6 +47,9 @@ include(":fabric-intermediary:mc1211")
 include(":fabric-intermediary:mc1216")
 include("fabric-official")
 include(":fabric-official:mc261")
+// Forge modules
+include("forge")
+include(":forge:mc1201")
 // Patch modules
 include(":patch:adventure-text-serializer-gson")
 include(":patch:adventure-text-serializer-legacy")

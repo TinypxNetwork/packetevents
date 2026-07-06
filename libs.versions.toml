@@ -16,6 +16,8 @@ classgraph = "4.8.184"
 checkerqual = "3.53.1"
 slf4j = "2.0.17"
 log4j = "2.24.3"
+forge = "47.3.0"
+forge-gradle = "6.0.+"
 
 [libraries]
 adventure-api = { group = "net.kyori", name = "adventure-api", version.ref = "adventure" }
@@ -53,3 +55,4 @@ adventure-serializers = ["adventure-text-serializer-gson", "adventure-text-seria
 
 [plugins]
 spongeGradle = { id = "org.spongepowered.gradle.plugin", version.ref = "spongeGradle" }
+forge-gradle = { id = "net.minecraftforge.gradle", version.ref = "forge-gradle" }
